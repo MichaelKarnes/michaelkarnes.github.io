@@ -1,7 +1,159 @@
 <!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+
+<html lang="en">
+<head runat="server">
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title><%: Page.Title %> - My ASP.NET Application</title>
+
+	<link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+	<link href="Content/bootstrap.css" rel="stylesheet" type="text/css" />
+	<link href="Content/Site.css" rel="stylesheet" type="text/css" />
+
+	<script type="text/javascript" src="Scripts/jquery-3.3.1.js"></script>
+	<script type="text/javascript" src="Scripts/bootstrap.js"></script>
+	<script type="text/javascript" src="Scripts/navbar.js"></script>
+
+	</head>
+	<body>
+		<header class="dark-grey">
+			<div class="container">
+				<h1 class="text-center"><img class="logo" src="images/logo.svg" width="75" height="75" />MICHAEL KARNES</h1>
+			</div>
+		</header>
+		<nav class="navbar navbar-expand-lg light-grey">
+			<div class="container">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item active">
+							<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#" data-toggle="hide" data-target=".projects">Projects</a>
+							<ul class="navbar-nav d-none projects">
+								<li class="nav-item"><a class="nav-link" href="/Projects/Ongoing">Ongoing</a></li>
+								<li class="nav-item"><a class="nav-link" href="/Projects/DotNet">.NET</a></li>
+								<li class="nav-item"><a class="nav-link" href="/Projects/UnityUnreal">Unity/Unreal</a></li>
+								<li class="nav-item"><a class="nav-link" href="/Projects/3DGraphics">3D Graphics</a></li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Academia</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Honors</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="body-content">
+			<div class="red">
+		<div class="container" style="padding-top: 20px;">
+			<div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+				<ol class="carousel-indicators">
+					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#myCarousel" data-slide-to="1"></li>
+					<li data-target="#myCarousel" data-slide-to="2"></li>
+					<li data-target="#myCarousel" data-slide-to="3"></li>
+				</ol>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<div class="view">
+							<img src="images/Robotics Project 2 Demo Labeled.png" class="d-block" alt="..." style="width: 100%; height: 500px; object-fit: cover;">
+							<div class="mask" style="background-color: rgba(0,0,0,.1);"></div>
+						</div>
+						<div class="carousel-caption">
+							<h3 style="text-shadow: 0px 0px 5px #000">Engineer</h3>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="view">
+							<img src="images/CG2 Demo.png" class="d-block w-100" alt="..." style="width: 100%; height: 500px; object-fit: cover; object-position: bottom;">
+							<div class="mask" style="background-color: rgba(0,0,0,.3);"></div>
+						</div>
+						<div class="carousel-caption">
+							<h3 style="text-shadow: 0px 0px 5px #000">.NET Developer</h3>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="view">
+							<img src="images/Time Crackers Game Development.png" class="d-block w-100" alt="..." style="width: 100%; height: 500px; object-fit: cover;">
+							<div class="mask" style="background-color: rgba(0,0,0,.2);"></div>
+						</div>
+						<div class="carousel-caption">
+							<h3 style="text-shadow: 0px 0px 5px #000">Game Developer</h3>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="view">
+							<img src="images/Parents Weekend Jouine Award.jpg" class="d-block w-100" alt="..." style="width: 100%; height: 500px; object-fit: cover;">
+							<div class="mask" style="background-color: rgba(0,0,0,.1);"></div>
+						</div>
+						<div class="carousel-caption">
+							<h3 style="text-shadow: 0px 0px 5px #000">Leader</h3>
+						</div>
+					</div>
+				</div>
+				<a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+			<div class="jumbotron">
+				<h1>ASP.NET</h1>
+				<p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS, and JavaScript.</p>
+				<p><a href="http://www.asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<h2>Getting started</h2>
+				<p>
+					ASP.NET Web Forms lets you build dynamic websites using a familiar drag-and-drop, event-driven model.
+				A design surface and hundreds of controls and components let you rapidly build sophisticated, powerful UI-driven sites with data access.
+				</p>
+				<p>
+					<a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301948">Learn more &raquo;</a>
+				</p>
+			</div>
+			<div class="col-md-4">
+				<h2>Get more libraries</h2>
+				<p>
+					NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.
+				</p>
+				<p>
+					<a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301949">Learn more &raquo;</a>
+				</p>
+			</div>
+			<div class="col-md-4">
+				<h2>Web Hosting</h2>
+				<p>
+					You can easily find a web hosting company that offers the right mix of features and price for your applications.
+				</p>
+				<p>
+					<a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301950">Learn more &raquo;</a>
+				</p>
+			</div>
+		</div>
+	</div>
+			<div class="container">
+				<hr />
+				<footer>
+					<p>&copy; <%: DateTime.Now.Year %> - My ASP.NET Application</p>
+				</footer>
+			</div>
+		</div>
 </body>
 </html>

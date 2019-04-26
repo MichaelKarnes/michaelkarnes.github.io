@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet">
+	<path fill="#C10000" stroke="black" stroke-width="5" d="
+		M	17.5	2.5
+		L	42.5	25
+		L	57.5	25
+		L	82.5	2.5
+		L	82.5	52.5
+		L	90		60
+		L	55		97.5
+		L	45		97.5
+		L	10		60
+		L	17.5	52.5z"></path>
+	<path fill="black" d="
+		M	40.5	29
+		L	21.5	12
+		L	21.5	47.5
+		L	27.5	41.5
+		L	27.5	26
+		L	36		33.5z"></path>
+	<path fill="black" d="
+		M	59.5	29
+		L	78.5	12
+		L	78.5	47.5
+		L	72.5	41.5
+		L	72.5	26
+		L	64		33.5z"></path>
+	<path fill="black" d="
+		M	32.5	52.5
+		L	37.5	52.5
+		A	5 5 0 0 1 42.5 57.5
+		L	42.5	62.5
+		L	37.5	62.5
+		A	5 5 0 0 1 32.5 57.5z"></path>
+	<path fill="black" d="
+		M	67.5	52.5
+		L	62.5	52.5
+		A	5 5 0 0 0 57.5 57.5
+		L	57.5	62.5
+		L	62.5	62.5
+		A	5 5 0 0 0 67.5 57.5z"></path>
+	<path fill="black" d="
+		M	49		91
+		L	44		86
+		A	5.6568542494923801952067548968388 5.6568542494923801952067548968388 0 0 1 56 86
+		L	56		86
+		L	51		91z"></path>
+</svg>
